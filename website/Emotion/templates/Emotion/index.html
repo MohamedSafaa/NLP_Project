@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h1 style="margin-left:40%">Emotions WebSite</h1>
+<div style="margin-left:5%">
+    <form action="/Emotion/GetEmotion/" method="POST">
+        {% csrf_token %}
+        <h4 style="margin-left:10%">Text (at least two Pharses)</h4>
+        <textarea name="Text" cols="50" rows="7"></textarea>
+        <br/><br/>
+        <button  style="margin-left:10%" type="submit">Get Emotion</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+from django.http import HttpResponse
+
+def index(request):
+	html='<form action="/music/Test/" method="POST">'+csrf_token+'<table><tr><td>Student ID : </td><td><input type="number" name="Student_ID"/></td></tr><tr><td>Student Name : </td><td><input type="text" name="Student_Name"/></td></tr></table><button type="submit">Register</button></form>'
+	return HttpResponse(html)
+
+def TEST(request):
+	request.POST['Student_Name']
+	return HttpResponse('Done1')
